@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center"
+    android:layout_margin="10dip" >
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/resumeAlertTextBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:drawableTop="@drawable/bdoku_friends_flat"
+        android:gravity="center"
+        android:paddingBottom="20dip"
+        android:text="@string/openSavedBoardText" />
+
+    <Button
+        android:id="@+id/resumeNo"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/resumeAlertTextBox"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/application_button"
+        android:text="@string/resumeGameNoButtonText"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/resumeYes"
+        android:layout_width="150dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/resumeAlertTextBox"
+        android:layout_marginTop="10dip"
+        android:background="@drawable/application_button"
+        android:text="@string/resumeGameYesButtonText"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="125dip"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resumeYes"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/application_button"
+        android:text="@string/resumeGameDeleteButtonText"
+        android:textSize="10dip" />
+
+</RelativeLayout>

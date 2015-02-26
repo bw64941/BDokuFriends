@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/solvedLinearLayout"
+    android:layout_width="300dip"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center" >
+
+    <TextView
+        android:id="@+id/solvedText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="12dp"
+        android:drawableTop="@drawable/bdoku_friends_flat"
+        android:gravity="center"
+        android:text="@string/solvedPopupText" />
+
+    <Button
+        android:id="@+id/gameTime_button"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/solvedText"
+        android:background="@drawable/application_button"
+        android:enabled="false"
+        android:textColor="@color/pencilValueColor"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/solvePostButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/gameTime_button"
+        android:background="@drawable/fb_button"
+        android:drawableLeft="@drawable/facebook_icon"
+        android:drawablePadding="5dip"
+        android:gravity="fill_horizontal"
+        android:text="@string/shareButtonText"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/solvOkButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/gameTime_button"
+        android:layout_toRightOf="@+id/solvePostButton"
+        android:background="@drawable/application_button"
+        android:text="@string/okButtonText"
+        android:textSize="10dip" />
+
+</RelativeLayout>

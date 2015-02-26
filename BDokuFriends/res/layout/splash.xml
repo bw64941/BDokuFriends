@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/splashImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/clearButtonText"
+        android:src="@drawable/splash_board" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/friendsSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashImage"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="25dip"
+        android:layout_marginTop="10dip"
+        android:contentDescription="@string/clearButtonText"
+        android:src="@drawable/bdoku_friends_flat" >
+    </ImageView>
+
+</RelativeLayout>

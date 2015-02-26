@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ViewFlipper xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/flipper"
+    android:layout_width="wrap_content"
+    android:layout_height="fill_parent"
+ >
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="bottom" >
+
+        <LinearLayout
+            android:id="@+id/footer2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/popup_top_frame" />
+
+        <Button
+            android:id="@+id/undo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/footer2"
+            android:background="@drawable/application_button"
+            android:gravity="center"
+            android:text="@string/undoButtonText" />
+
+        <Button
+            android:id="@+id/validate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footer2"
+            android:layout_toRightOf="@+id/undo"
+            android:background="@drawable/application_button"
+            android:gravity="center"
+            android:text="@string/validateButtonText" />
+
+        <ToggleButton
+            android:id="@+id/pencilToggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/footer2"
+            android:layout_toRightOf="@+id/validate"
+            android:background="@drawable/application_button"
+            android:gravity="center"
+            android:maxWidth="100dip"
+            android:textOff="@string/pencilButtonText"
+            android:textOn="@string/pencilButtonText" />
+
+        <com.facebook.widget.LoginButton
+            android:id="@+id/authButton"
+            style="@style/com_facebook_loginview_default_style"
+            android:layout_width="180dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/validate"
+            android:layout_marginTop="10dip"
+            android:gravity="center" />
+
+        <Button
+            android:id="@+id/share"
+            android:layout_width="190dip"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/undo"
+            android:layout_below="@+id/validate"
+            android:background="@drawable/fb_button"
+            android:drawableLeft="@drawable/facebook_icon"
+            android:drawablePadding="5dip"
+            android:gravity="center"
+            android:maxWidth="190dip"
+            android:text="@string/fbPanelButtonText"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/save"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/pencilToggle"
+            android:layout_below="@+id/pencilToggle"
+            android:background="@drawable/application_button"
+            android:gravity="center"
+            android:maxWidth="100dip"
+            android:text="@string/saveButtonText" />
+
+        <LinearLayout
+            android:id="@+id/footer3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/save"
+            android:background="@drawable/popup_bottom_frame" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/facebookFeedLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/topFrame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/popup_top_frame" />
+
+        <TextView
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/facebookFeedView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/topFrame"
+            android:maxLines="5"
+            android:minLines="5"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            android:scrollbars="vertical"
+            android:text="@string/waitingForFBResponseText" />
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/facebookFeedView"
+            android:background="@drawable/application_button"
+            android:gravity="center"
+            android:text="@string/back" />
+
+        <Button
+            android:id="@+id/postButton"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/facebookFeedView"
+            android:background="@drawable/fb_button"
+            android:drawableLeft="@drawable/facebook_icon"
+            android:gravity="center"
+            android:text="@string/post" />
+
+        <LinearLayout
+            android:id="@+id/bottomFrame"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/postButton"
+            android:background="@drawable/popup_bottom_frame" />
+    </RelativeLayout>
+
+</ViewFlipper>

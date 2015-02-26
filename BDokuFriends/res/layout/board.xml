@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/boardLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:inAnimation="@anim/fade_in" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:ads="http://schemas.android.com/apk/lib/com.google.ads"
+        android:id="@+id/linearAd"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical" >
+
+        <!--
+             <com.google.ads.AdView
+            android:id="@+id/adView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            ads:adSize="BANNER"
+            ads:adUnitId="a14f4e8bd769246"
+            ads:loadAdOnCreate="true"
+            ads:testDevices="TEST_EMULATOR, Droid_Bionic" />
+        -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearAd"
+        android:background="@drawable/popup_top_frame" />
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/boardLinearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_below="@+id/header"
+        android:layout_marginTop="1dip" >
+
+        <view
+            android:id="@+id/boardView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            class="com.bdoku.view.BoardView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/timerLabel"
+        android:background="@drawable/popup_bottom_frame" />
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/timerLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewFlipper"
+        android:layout_alignParentLeft="true"
+        android:text="@string/timerLabel" />
+
+    <TextView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/timerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/viewFlipper"
+        android:layout_alignParentRight="true"
+        android:text="@string/timerText" />
+
+    <com.bdoku.view.ControlsViewFlipper
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/viewFlipper"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        class="com.bdoku.view.ControlsViewFlipper"
+        android:background="@color/systemValueColor" />
+
+</RelativeLayout>

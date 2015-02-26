@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/solve"
+        android:title="@string/solveMenuItem"/>
+    <item
+        android:id="@+id/hint"
+        android:title="@string/hintButtonText"/>
+
+</menu>

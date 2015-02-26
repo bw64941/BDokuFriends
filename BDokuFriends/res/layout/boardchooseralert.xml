@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/relativeLayout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="top|center|clip_horizontal|clip_vertical" >
+
+    <TextView
+        android:id="@+id/boardChooserText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="12dp"
+        android:drawableTop="@drawable/bdoku_friends_flat"
+        android:gravity="center"
+        android:text="@string/difficultyChooserPrompt" />
+
+    <Button
+        android:id="@+id/easyButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/boardChooserText"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/application_button"
+        android:text="@string/easy_button_label"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/mediumButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/easyButton"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/application_button"
+        android:text="@string/medium_button_label"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/hardButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mediumButton"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/application_button"
+        android:text="@string/hard_button_label"
+        android:textSize="10dip" />
+
+    <Button
+        android:id="@+id/resumeButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hardButton"
+        android:layout_centerInParent="true"
+        android:background="@drawable/application_button"
+        android:text="@string/resume_button_label"
+        android:textSize="10dip" />
+
+</RelativeLayout>

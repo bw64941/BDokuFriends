@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/splashLayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_gravity="center"
+    android:gravity="center" >
+
+    <ImageView
+        android:id="@+id/splashImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/clearButtonText"
+        android:src="@drawable/splash_board" >
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/friendsSplash"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splashImage"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/clearButtonText"
+        android:src="@drawable/bdoku_friends_flat" >
+    </ImageView>
+
+    <RelativeLayout
+        android:id="@+id/splashButtonLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/systemValueColor" >
+
+        <LinearLayout
+            android:id="@+id/footer"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/popup_top_frame" >
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/new_button"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/footer"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/application_button"
+            android:text="@string/newGameButtonText"
+            android:textSize="10dip" />
+
+        <Button
+            android:id="@+id/about_button"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/new_button"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="2dip"
+            android:background="@drawable/application_button"
+            android:text="@string/aboutButtonText"
+            android:textSize="10dip" />
+
+        <Button
+            android:id="@+id/exit_button"
+            android:layout_width="200dip"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/about_button"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/application_button"
+            android:text="@string/exitButtonText"
+            android:textSize="10dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/exit_button"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="4dip"
+            android:layout_toLeftOf="@+id/exit_button"
+            android:text="@string/company"
+            android:textSize="12dip" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/exit_button"
+            android:layout_marginBottom="4dip"
+            android:layout_marginLeft="5dip"
+            android:layout_toRightOf="@+id/exit_button"
+            android:text="@string/version"
+            android:textSize="10dip" />
+    </RelativeLayout>
+
+</RelativeLayout>

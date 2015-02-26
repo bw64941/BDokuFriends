@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="applicationName">B-Doku Friends Sudoku</string>
+
+    <!-- Facebook String -->
+    <string name="app_id">235388389885329</string>
+    <string name="cancelled">Cancelled</string>
+    <string name="ok">OK</string>
+    <string name="success">Success</string>
+    <string name="successfully_posted_post">Successfully posted to Facebook.\nPost ID: %1$s</string>
+    <string name="permission_not_granted">Unable to perform selected action because permissions were not granted.</string>
+    <string name="error">Error</string>
+    <string name="error_dialog_title">Error</string>
+    <string name="error_dialog_button_text">OK</string>
+    <string name="error_dialog_default_text">No response from server.</string>
+    <string name="error_authentication_retry">An error occurred that requires your attention. %1$s</string>
+    <string name="error_authentication_reopen">An error occurred, please re-login.</string>
+    <string name="error_permission">Please allow us to post on your behalf.</string>
+    <string name="error_server">The server is busy, please retry later.</string>
+    <string name="error_bad_request">An error occurred, please contact the developer with the following message: %1$s</string>
+    <string name="error_unknown">An unknown error occurred, please contact the developer with the following message: %1$s</string>
+    <string name="progress_dialog_text">Posting Board to Facebook, please wait</string>
+
+    <!-- About Dialog Strings -->
+    <string name="aboutDialogText">B-Doku is a user-friendly version of the classic Sudoku puzzle game. Players are challenged to determine the correct placement of numbers 1 to 9 in 3x3 squares within a 9x9 game board without repetition in squares or rows/columns. Features include the ability to pencil in values before final placement, undo, progress check, and hint; using these features allows the player to logically think through the puzzle and achieve success.
+        If you become stuck do not hesitate to share your game board on Facebook by pressing the Share button.  This will post on your wall a snapshot of your game so your friends can help you out.</string>
+    <!-- Resume Game Dialog Strings -->
+    <string name="openSavedBoardText">You have a game already in progress.
+        Would you like to resume?</string>
+    <string name="resumeGameYesButtonText">Yes</string>
+    <string name="resumeGameNoButtonText">No</string>
+    <string name="resumeGameDeleteButtonText">Delete</string>
+
+    <!-- New Game Dialog Strings -->
+    <string name="difficultyChooserPrompt">Select Game Difficulty</string>
+    <string name="easy_button_label">Easy</string>
+    <string name="medium_button_label">Medium</string>
+    <string name="hard_button_label">Hard</string>
+    <string name="resume_button_label">Resume</string>
+
+    <!-- Game Play Strings -->
+    <string name="doingGreatText">You are doing GREAT!</string>
+    <string name="mistakeText">You have made a mistake!</string>
+    <string name="correctMistakesText">Correct mistakes on board first!</string>
+
+    <!-- Menu Strings -->
+    <string name="solveMenuItem">Solve</string>
+    <string name="hintButtonText">Hint</string>
+
+    <!-- Timer Strings -->
+    <string name="timerLabel">Game Time:</string>
+    <string name="timerText">0:00</string>
+
+    <!-- Toolbar Strings -->
+    <string name="undoButtonText">Undo</string>
+    <string name="pencilButtonText">Pencil</string>
+    <string name="validateButtonText">Check</string>
+    <string name="saveButtonText">Save</string>
+
+    <!-- Facebook Strings -->
+    <string name="post">Post to Facebook</string>
+    <string name="playingPostString">I am Playing B-Doku Friends for Android!</string>
+    <string name="helpPostString">Give me a hint on my next move.</string>
+    <string name="appLogoLink">https://lh5.ggpht.com/gS0Q9egPY0STQCUI7x9wAnzlrGd51PdV0uxrDsyD-pjubC_3ZYFsu43235L8V7iqEu66=w78-h78</string>
+    <string name="appLink">https://play.google.com/store/apps/details?id=com.ironbrand.bdoku.friends</string>
+    <string name="solvedPostString">I just solved this B-Doku Sudoku Board.  See if you can beat my time!</string>
+    <string name="waitingForFBResponseText">Post your game board to see comments in this window from your Friends on Facebook.</string>
+    <string name="fbPanelButtonText">Play with Friends</string>
+    <string name="shareButtonText">Share on Facebook</string>
+
+    <!-- Pencil Dialog Strings -->
+    <string name="allButtonText">All</string>
+
+    <!-- Keypad Dialog Strings -->
+    <string name="clearButtonText">Clear</string>
+
+    <!-- Splash Screen Buttons -->
+    <string name="newGameButtonText">New</string>
+    <string name="exitButtonText">Exit</string>
+    <string name="aboutButtonText">About</string>
+    <string name="company">IronBrand Software</string>
+
+    <!-- General -->
+    <string name="version">Version 2.5</string>
+    <string name="okButtonText">OK</string>
+    <string name="solvedPopupText">BOARD SOLVED!  CONGRATULATIONS!</string>
+    <string name="back">Back</string>
+
+</resources>
